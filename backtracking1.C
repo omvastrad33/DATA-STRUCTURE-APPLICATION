@@ -1,3 +1,4 @@
+// print all possible strings that can be made by placing spaces //
 #include <stdio.h>
 #include <string.h>
 int main()
