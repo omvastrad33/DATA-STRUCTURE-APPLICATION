@@ -1,6 +1,20 @@
 //MINIMUM COST OF ROPES PROB//
 #include <stdio.h>
 #include <stdlib.h>
+int main() {
+    int n;
+    printf("Enter the number of ropes: ");
+    scanf("%d", &n);
+    int ropes[n];
+    printf("Enter the lengths of the ropes:\n");
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &ropes[i]);
+    }
+    int result = min_cost_ropes(ropes, n);
+    printf("The minimum cost of ropes is: %d\n", result);
+    return 0;
+}
+
 
 int min_cost_ropes(int ropes[], int n) {
     for (int i = 0; i < n-1; i++) {
@@ -27,16 +41,3 @@ int min_cost_ropes(int ropes[], int n) {
     return total_cost;
 }
 
-int main() {
-    int n;
-    printf("Enter the number of ropes: ");
-    scanf("%d", &n);
-    int ropes[n];
-    printf("Enter the lengths of the ropes:\n");
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &ropes[i]);
-    }
-    int result = min_cost_ropes(ropes, n);
-    printf("The minimum cost of ropes is: %d\n", result);
-    return 0;
-}
