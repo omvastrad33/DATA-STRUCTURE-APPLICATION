@@ -22,9 +22,6 @@ int main()
 {
     struct node* root = NULL;
     int choice, data;
-
-    printf("AVL Tree Insertion\n");
-
     while (1)
         {
         printf("1. Insert a node\n");
